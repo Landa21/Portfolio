@@ -1,7 +1,6 @@
 
-  # Unique Techie Portfolio
+  # Portfolio
 
-  This is a code bundle for Unique Techie Portfolio. The original project is available at https://www.figma.com/design/m33cjpXpLp72G1bTMBGBKx/Unique-Techie-Portfolio.
 
   ## Running the code
 
