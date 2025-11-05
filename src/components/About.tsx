@@ -14,7 +14,7 @@ export function About() {
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl" />
-      
+
       <div className="container mx-auto px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -30,46 +30,60 @@ export function About() {
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
+          {/* Hoverable code card */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            whileHover={{ y: -5 }}
+            transition={{ duration: 0.6, type: "spring", stiffness: 300, damping: 15 }}
+            className="group relative"
           >
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-2xl blur-xl opacity-30" />
-              <div className="relative bg-slate-800/50 backdrop-blur-sm border border-cyan-500/20 rounded-2xl p-8">
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="w-3 h-3 rounded-full bg-red-500" />
-                  <div className="w-3 h-3 rounded-full bg-yellow-500" />
-                  <div className="w-3 h-3 rounded-full bg-green-500" />
+            <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-2xl blur-lg opacity-0 group-hover:opacity-50 transition-opacity" />
+            <div className="relative bg-slate-800/50 backdrop-blur-sm border border-cyan-500/20 rounded-2xl p-8 group-hover:border-cyan-500/40 transition-colors">
+              <div className="flex items-center gap-2 mb-4">
+                <div className="w-3 h-3 rounded-full bg-red-500" />
+                <div className="w-3 h-3 rounded-full bg-yellow-500" />
+                <div className="w-3 h-3 rounded-full bg-green-500" />
+              </div>
+              <div className="space-y-2 text-sm">
+                <div className="text-slate-500">
+                  <span className="text-purple-400">const</span>{' '}
+                  <span className="text-cyan-400">developer</span> ={' '}
+                  <span className="text-yellow-400">{'{'}</span>
                 </div>
-                <div className="space-y-2 text-sm">
-                  <div className="text-slate-500">
-                    <span className="text-purple-400">const</span>{' '}
-                    <span className="text-cyan-400">developer</span> ={' '}
-                    <span className="text-yellow-400">{'{'}</span>
-                  </div>
-                  <div className="text-slate-500 pl-4">
-                    name: <span className="text-green-400">'Yolanda Petunia Ntuli'</span>,
-                  </div>
-                  <div className="text-slate-500 pl-4">
-                    role: <span className="text-green-400">'Full Stack Developer'</span>,
-                  </div>
-                  <div className="text-slate-500 pl-4">
-                    location: <span className="text-green-400">'Johannesburg, South Africa'</span>,
-                  </div>
-                  <div className="text-slate-500 pl-4">
-                    passion: <span className="text-green-400">'Building great products'</span>
-                  </div>
-                  <div className="text-slate-500">
-                    <span className="text-yellow-400">{'}'}</span>;
-                  </div>
+                <div className="text-slate-500 pl-4">
+                  name:{' '}
+                  <span className="text-green-400 group-hover:text-green-300 transition-colors">
+                    'Yolanda Petunia Ntuli'
+                  </span>,
+                </div>
+                <div className="text-slate-500 pl-4">
+                  role:{' '}
+                  <span className="text-green-400 group-hover:text-green-300 transition-colors">
+                    'Full Stack Developer'
+                  </span>,
+                </div>
+                <div className="text-slate-500 pl-4">
+                  location:{' '}
+                  <span className="text-green-400 group-hover:text-green-300 transition-colors">
+                    'Johannesburg, South Africa'
+                  </span>,
+                </div>
+                <div className="text-slate-500 pl-4">
+                  passion:{' '}
+                  <span className="text-green-400 group-hover:text-green-300 transition-colors">
+                    'Building great products'
+                  </span>
+                </div>
+                <div className="text-slate-500">
+                  <span className="text-yellow-400">{'}'}</span>;
                 </div>
               </div>
             </div>
           </motion.div>
 
+          {/* Description section */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -95,7 +109,7 @@ export function About() {
           </motion.div>
         </div>
 
-        {/* Stats */}
+        {/* Stats section */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {stats.map((stat, index) => (
             <motion.div
