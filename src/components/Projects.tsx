@@ -146,21 +146,7 @@ export function Projects() {
         </div>
 
         {/* View all projects button */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-center mt-12"
-        >
-          <a
-            href="#"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-slate-800/50 border border-cyan-500/30 text-cyan-400 rounded-lg backdrop-blur-sm transition-all hover:border-cyan-500/60 hover:bg-slate-800/80"
-          >
-            View All Projects
-            <ExternalLink className="w-4 h-4" />
-          </a>
-        </motion.div>
+       
       </div>
     </section>
   );

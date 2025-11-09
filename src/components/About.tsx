@@ -2,10 +2,9 @@ import { motion } from 'motion/react';
 import { Code, Coffee, Zap, Cpu } from 'lucide-react';
 
 const stats = [
-  { icon: Code, label: 'Projects Completed', value: '50+' },
-  { icon: Coffee, label: 'Cups of Coffee', value: '1000+' },
-  { icon: Zap, label: 'Technologies', value: '25+' },
-  { icon: Cpu, label: 'Years Experience', value: '5+' },
+  { icon: Code, label: 'Projects Completed', value: '5+' },
+  { icon: Zap, label: 'Technologies', value: '7' },
+  { icon: Cpu, label: 'Years Experience', value: '>1' },
 ];
 
 export function About() {

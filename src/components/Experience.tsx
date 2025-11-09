@@ -14,18 +14,8 @@ const experiences = [
     ],
     icon: Briefcase,
   },
-  {
-    company: 'Self-Learning & Projects',
-    role: 'Independent Developer',
-    period: '2023 - Present',
-    description: 'Continuously expanding my skills through personal projects, online courses, and hands-on practice with various technologies.',
-    achievements: [
-      'Completed multiple full-stack projects from concept to deployment',
-      'Mastered React, TypeScript, and modern web development tools',
-      'Active contributor to coding communities and forums',
-    ],
-    icon: GraduationCap,
-  },
+ 
+  
 ];
 
 export function Experience() {
