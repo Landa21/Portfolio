@@ -10,10 +10,10 @@ export function Contact() {
     if (!form.current) return;
 
     emailjs.sendForm(
-      'service_wfe3n72',      // Your Service ID
-      'template_eg21eqc',     // Your Template ID
+      'service_wfe3n72',      //  Service ID
+      'template_eg21eqc',     //  Template ID
       form.current,
-      'GgDrsX1p2Wdfi--DJ'     // Your Public Key
+      'GgDrsX1p2Wdfi--DJ'     //  Public Key
     ).then(
       () => {
         setStatus('✅ Message sent successfully!');

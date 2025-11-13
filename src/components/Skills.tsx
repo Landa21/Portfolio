@@ -4,17 +4,17 @@ const skillCategories = [
   {
     title: 'Frontend',
     color: 'from-cyan-500 to-blue-600',
-    skills: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS'],
+    skills: ['HTML', 'CSS', 'React', 'TypeScript', 'Next.js', 'Tailwind CSS'],
   },
   {
     title: 'Backend',
     color: 'from-blue-500 to-purple-600',
-    skills: ['Node.js', 'MongoDB', 'MySQL'],
+    skills: ['Node.js', 'MongoDB', 'MySQL','Firebase', 'C#', 'Java'],
   },
   {
     title: 'DevOps & Tools',
     color: 'from-purple-500 to-pink-600',
-    skills: ['Git', 'AWS'],
+    skills: ['Git', 'AWS', 'Azure','IntelliJ IDEA', 'Visual Studio',],
   },
 ];
 
@@ -24,7 +24,6 @@ const tools = [
   'Postman',
   'GitHub',
   'Vercel',
-  'Firebase',
   'SQL',
   'Vite',
 ];

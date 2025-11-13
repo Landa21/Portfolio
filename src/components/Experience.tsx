@@ -34,7 +34,7 @@ export function Experience() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl mb-4 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-            Journey
+            Experience
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-cyan-500 to-blue-600 mx-auto" />
         </motion.div>

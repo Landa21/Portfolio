@@ -4,7 +4,7 @@ import { Code, Coffee, Zap, Cpu } from 'lucide-react';
 const stats = [
   { icon: Code, label: 'Projects Completed', value: '5+' },
   { icon: Zap, label: 'Technologies', value: '7' },
-  { icon: Cpu, label: 'Years Experience', value: '>1' },
+  { icon: Cpu, label: 'Years Experience', value: '1' },
 ];
 
 export function About() {
