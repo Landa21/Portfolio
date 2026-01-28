@@ -32,6 +32,13 @@ const projects = [
     github: 'https://github.com/Landa21/my-recipe-finder',
     demo: 'https://my-recipe-finder-rust.vercel.app/',
   },
+  {
+    title: 'VINOTHÈQUE',
+    mediaType: 'video',
+    src: '/videos/Vinotheque.mp4',
+    github: 'https://github.com/Landa21/vinotque',
+    demo: 'https://vinotque.vercel.app/',
+  }
 ];
 
 export function Projects() {
