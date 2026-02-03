@@ -38,6 +38,13 @@ const projects = [
     src: '/videos/Vinotheque.mp4',
     github: 'https://github.com/Landa21/Vinotheque',
     demo: 'https://vinotheque-five.vercel.app/',
+  },
+  {
+    title: 'Corpsync',
+    mediaType: 'video',
+    src: '/videos/corpsync.mp4',
+    github: 'https://github.com/Landa21/Corpsync',
+    
   }
 ];
 
