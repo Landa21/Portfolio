@@ -36,8 +36,8 @@ const projects = [
     title: 'VINOTHÈQUE',
     mediaType: 'video',
     src: '/videos/Vinotheque.mp4',
-    github: 'https://github.com/Landa21/vinotque',
-    demo: 'https://vinotque.vercel.app/',
+    github: 'https://github.com/Landa21/Vinotheque',
+    demo: 'https://vinotheque-five.vercel.app/',
   }
 ];
 
